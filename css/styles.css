@@ -16,3 +16,14 @@
   margin-top: 200px;
   margin-left: 100px;
 }
+
+.bg-color-custom {
+  background-color: #C8E9F0;
+}
+#survey-card {
+  margin-left: 35px;
+}
+
+.bg-color-orange {
+  background-color: #F0A377;
+}
