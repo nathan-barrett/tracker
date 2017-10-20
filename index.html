@@ -27,14 +27,14 @@
       </ul>
 <!--start form here -->
       <h2>Fill out the survey below to find out which track you would be a great fit for at epicodus:</h2>
-      <form id="trackerForm">
+      <form id="tracker">
         <div class="form-group">
           <label for="Name">Name</label>
           <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here">
         </div>
 <!--form first question-->
         <div class="form-group">
-          <label for="goal">How would you describe yourself?</label>
+          <label for="quesOne">How would you describe yourself?</label>
           <select class="form-control" id="describeInput">
             <option  disabled selected>Open menu to select option</option>
             <option value="1">1 - Logical - I like looking at things through existing frameworks.</option>
@@ -44,7 +44,7 @@
         </div>
         <!--form second question-->
         <div class="form-group">
-          <label for="goal">Why do you want to learn how to code?</label>
+          <label for="QuesTwo">Why do you want to learn how to code?</label>
           <select class="form-control" id="goalInput">
             <option disabled selected>Open menu to select option</option>
             <option value="1">1 - Be a professional developer.</option>
@@ -54,8 +54,8 @@
         </div>
 <!--form third question-->
         <div class="form-group">
-          <label for="goal">What part of programming interests you the most?</label>
-          <select class="form-control" id="interestlInput">
+          <label for="quesThree">What part of programming interests you the most?</label>
+          <select class="form-control" id="interestInput">
             <option disabled selected>Open menu to select option</option>
             <option value="1">1 - Working in the back end - manage frameworks about websites actaully operate</option>
             <option value="2">2 - Making things look nice - obsessing about layouts, colors and design.</option>
@@ -85,8 +85,15 @@
         <input class="btn btn-primary" type="submit" value="Submit">
       </form>
       <br>
-      <div class="surveyResults">
-
+      <div class="surveyResults card">
+        <div class="card-body">
+          <h2 class="card-header text-center">Hey <span id=defaultName>you</span>,<span id="surveyName"></span> this is what class you should take:</h2>
+          <div class="card-text">
+            <p id="cSharpResult"> C#/.NET</p>
+            <p id="cssDesignResult">CSS/Design</p>
+            <p id="rubyRailsResult">Ruby/Rails</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
