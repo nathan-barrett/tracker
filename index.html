@@ -27,7 +27,7 @@
       </ul>
 <!--start form here -->
       <h2>Fill out the survey below to find out which track you would be a great fit for at epicodus:</h2>
-      <form id="tracker">
+      <form id="trackerForm">
         <div class="form-group">
           <label for="Name">Name</label>
           <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here">
@@ -37,9 +37,9 @@
           <label for="goal">How would you describe yourself?</label>
           <select class="form-control" id="describeInput">
             <option  disabled selected>Open menu to select option</option>
-            <option>1 - Logical - I like looking at things through existing frameworks.</option>
-            <option>2 - Creative - I like to look outide the box for new solutions.</option>
-            <option>3 - Adaptable - able to be both creative and logical to meet demands.</option>
+            <option value="1">1 - Logical - I like looking at things through existing frameworks.</option>
+            <option value="2">2 - Creative - I like to look outide the box for new solutions.</option>
+            <option value="3">3 - Adaptable - able to be both creative and logical to meet demands.</option>
           </select>
         </div>
         <!--form second question-->
@@ -47,9 +47,9 @@
           <label for="goal">Why do you want to learn how to code?</label>
           <select class="form-control" id="goalInput">
             <option disabled selected>Open menu to select option</option>
-            <option>1 - Be a professional developer.</option>
-            <option>2 - Create and run my own start-up.</option>
-            <option>3- Build something fun!</option>
+            <option value="1">1 - Be a professional developer.</option>
+            <option value="2">2 - Create and run my own start-up.</option>
+            <option value="3">3- Build something fun!</option>
           </select>
         </div>
 <!--form third question-->
@@ -57,9 +57,9 @@
           <label for="goal">What part of programming interests you the most?</label>
           <select class="form-control" id="interestlInput">
             <option disabled selected>Open menu to select option</option>
-            <option>1 - Working in the back end - manage frameworks about websites actaully operate</option>
-            <option>2 - Making things look nice - obsessing about layouts, colors and design.</option>
-            <option>3 - Making the hottest web applications that I can. </option>
+            <option value="1">1 - Working in the back end - manage frameworks about websites actaully operate</option>
+            <option value="2">2 - Making things look nice - obsessing about layouts, colors and design.</option>
+            <option value="3">3 - Making the hottest web applications that I can. </option>
           </select>
         </div>
 <!--form fourth question-->
@@ -67,9 +67,9 @@
           <label for="goal">Pick your favorite food amongst the following:</label>
           <select class="form-control" id="foodInput">
             <option disabled selected>Open menu to select option</option>
-            <option>1 - A plain bologna sandwich, with the crusts cut off.</option>
-            <option>2 - A hot slice of pizza, with pineapple and anchovies thrown on top.</option>
-            <option>3 - You're at a buffett - so, pudding, ice cream and macaroni and cheese. </option>
+            <option value="1">1 - A plain bologna sandwich, with the crusts cut off.</option>
+            <option value="2">2 - A hot slice of pizza, with pineapple and anchovies thrown on top.</option>
+            <option value="3">3 - You're at a buffett - so, pudding, ice cream and macaroni and cheese. </option>
           </select>
         </div>
 <!--form fifth question-->
@@ -77,14 +77,17 @@
           <label for="goal">There is a giant bug in your house, what do you do?</label>
           <select class="form-control" id="bugInput">
             <option disabled selected>Open menu to select option</option>
-            <option>1 - Grab the newspaper - and do what needs to be done.</option>
-            <option>2- Devise an elaboate trap, and once caught release into the outdoors</option>
-            <option>3 - Find some smaller bugs that it can eat - set up a ife-long partnership which will beneift both of you.</option>
+            <option value="1">1 - Grab the newspaper - and do what needs to be done.</option>
+            <option value="2">2- Devise an elaboate trap, and once caught release into the outdoors</option>
+            <option value="3">3 - Find some smaller bugs that it can eat - set up a ife-long partnership which will beneift both of you.</option>
           </select>
         </div>
         <input class="btn btn-primary" type="submit" value="Submit">
       </form>
       <br>
+      <div class="surveyResults">
+
+      </div>
     </div>
   </body>
 </html>
