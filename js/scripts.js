@@ -14,23 +14,26 @@ $('document').ready(function() {
     if (totalQuesVal >= 5 && totalQuesVal <= 7) {
       $("#defaultName").hide();
       $("#surveyName").text(inputName);
+      $("#defaultPhoto").hide();
       $("#cssDesignResult").hide();
       $("#rubyRailsResult").hide();
-      $("#cSharpResult").show();
+      $("#cSharpResult").slideDown();
     }
     else if (totalQuesVal >= 8 && totalQuesVal <= 12) {
       $("#defaultName").hide();
       $("#surveyName").text(inputName);
+      $("#defaultPhoto").hide();
       $("#cSharpResult").hide();
       $("#rubyRailsResult").hide();
-      $("#cssDesignResult").show();
+      $("#cssDesignResult").slideDown();
     }
     else if (totalQuesVal >= 12) {
       $("#defaultName").hide();
       $("#surveyName").text(inputName);
+      $("#defaultPhoto").hide();
       $("#cSharpResult").hide();
       $("#cssDesignResult").hide();
-      $("#rubyRailsResult").show();
+      $("#rubyRailsResult").slideDown();
 
     }
 
