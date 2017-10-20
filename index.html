@@ -10,23 +10,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>What to expect when you're expecting...to code</h1>
-        <img src="" alt="">
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="img/header2.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <br><br><br><br><br><br><br><br>
+          <h1 class="text-center">What to expect when you're expecting....to code!</h1>
+        </div>
       </div>
-      <h2>If you want to learn to code, you need to pick your first language!</h2>
+      <br>
+      <h2 class="text-center">If you want to learn to code, you need to pick your first language!</h2>
 <!--add ACTUAL text for information about epicodus-->
-      <p>At Epicodus, Your head is not an artifact! Besides, you look good in a dress. Mr. Crusher, ready a collision course with the Borg ship. Talk about going nowhere fast. What? We're not at all alike! About four years. I got tired of hearing how young I looked. A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to you. Mr. Worf, you sound like a man who's asking his friend if he can start dating his sister. Not if I weaken first. Commander William Riker of the Starship Enterprise. Now, how the hell do we defeat an enemy that knows us better than we know ourselves? Yesterday I did not know how to eat gagh.</p>
-      <h2>Some information about the coding tracks that are offered at Epicodus:</h2>
-<!--information about the different tracks at Epicodus-->
-      <ul>
-        <li>C#/.NET</li>
-        <li>Ruby/Rails</li>
-        <li>CSS/Design</li>
-        <li>Java/Android</li>
-      </ul>
+      <div class="container text-center">
+        <p>At Epicodus, Your head is not an artifact! Besides, you look good in a dress. Mr. Crusher, ready a collision course with the Borg ship. Talk about going nowhere fast. What? We're not at all alike! About four years. I got tired of hearing how young I looked. A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to you. Mr. Worf, you sound like a man who's asking his friend if he can start dating his sister. Not if I weaken first. Commander William Riker of the Starship Enterprise. Now, how the hell do we defeat an enemy that knows us better than we know ourselves? Yesterday I did not know how to eat gagh.</p>
+      </div>
 <!--start form here -->
-      <h2>Fill out the survey below to find out which track you would be a great fit for at epicodus:</h2>
+      <h2 class=text-center>Fill out the survey below to find out which track you would be a great fit for at epicodus:</h2>
       <form id="tracker">
         <div class="form-group">
           <label for="Name">Name</label>
@@ -87,11 +85,30 @@
       <br>
       <div class="surveyResults card">
         <div class="card-body">
-          <h2 class="card-header text-center">Hey <span id=defaultName>you</span>,<span id="surveyName"></span> this is what class you should take:</h2>
-          <div class="card-text">
-            <p id="cSharpResult"> C#/.NET</p>
-            <p id="cssDesignResult">CSS/Design</p>
-            <p id="rubyRailsResult">Ruby/Rails</p>
+          <h2 class="card-header text-center">Hey, <span id=defaultName>you</span><span id="surveyName"></span>, this is what class you should take:</h2>
+          <div id="cSharpResult">
+            <img class="card-img-top" src="img/csharp.png" alt="cSharp logo">
+            <div class="card-body text-center">
+              <h4 class="card-title">C#/.NET</h4>
+              <p class="card-text">The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more. Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. Companies using C# and .NET who have hired Epicodus graduates include Windsor and Incomm.</p>
+              <a href="https://www.epicodus.com/c-sharp/" class="btn btn-info">Learn more at Epicodus!</a>
+            </div>
+          </div>
+          <div id="cssDesignResult">
+            <img class="card-img-top" src="img/design.jpg" alt="design logo">
+            <div class="card-body text-center">
+              <h4 class="card-title">C#/.NET</h4>
+              <p class="card-text">CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
+              <a href="https://www.epicodus.com/css/" class="btn btn-info">Learn more at Epicodus!</a>
+            </div>
+          </div>
+          <div id="rubyRailsResult">
+            <img class="card-img-top" src="img/ruby.jpg" alt="ruby logo">
+            <div class="card-body text-center">
+              <h4 class="card-title">Ruby!</h4>
+              <p class="card-text">Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. The Ruby programming language is most commonly used with the Ruby on Rails framework. Ruby and Rails are typically used by younger companies and startups, especially for building interactive web applications. Companies using Ruby and Rails who have hired Epicodus graduates include New Relic, LivingSocial, and SpendWell.</p>
+              <a href="https://www.epicodus.com/ruby/" class="btn btn-info">Learn more at Epicodus!</a>
+            </div>
           </div>
         </div>
       </div>
